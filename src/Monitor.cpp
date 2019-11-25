@@ -16,6 +16,12 @@
  * along with sspender.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// https://stackoverflow.com/questions/4951257/using-c-code-to-get-same-info-as-ifconfig/15678649
+// http://cvsweb.netbsd.org/bsdweb.cgi/src/sbin/ifconfig/ifconfig.c?rev=1.169&content-type=text/x-cvsweb-markup
+// https://stackoverflow.com/questions/54163647/what-is-the-easiest-way-to-get-ppp0-interface-tx-rx-bytes-in-a-custom-c-c-prog
+// https://serverfault.com/questions/533513/how-to-get-tx-rx-bytes-without-ifconfig
+// https://fossies.org/linux/ethtool/ethtool.c
+
 #include "Monitor.h"
 
 namespace
