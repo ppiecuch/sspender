@@ -81,6 +81,8 @@ void Manager::monitorSystemUsage()
 
 		bool stayOnline = m_monitor.areClientsConnected(m_ipsToWatch);
 
+                cout << std::flush;
+
 		if(stayOnline)
 		{
 			cout << "Found clients online, will stop monitoring for "
@@ -145,6 +147,7 @@ void Manager::monitorSystemUsage()
 				notIdleStartTime = Clock::now();
 			}
 		}
+		cout << std::flush;
 	}
 }
 

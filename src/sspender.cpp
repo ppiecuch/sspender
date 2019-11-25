@@ -40,6 +40,8 @@ int main(int argc, char *argv[])
     int reset_monitoring_after;
     int suspend_after;
 
+	cout << "Service started with configuration: " << filePath << "\n";
+
 	PartitionTable partitionTable;
 
 	partitionTable.loadPartitionTable();
@@ -116,6 +118,8 @@ int main(int argc, char *argv[])
 		   	    		  suspend_after);
 
 		printHeaderMessage("Monitoring the machine", false);
+
+		cout << std::flush;
 
 		manager.monitorSystemUsage();
 	}
